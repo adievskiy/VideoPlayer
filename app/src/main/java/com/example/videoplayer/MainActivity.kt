@@ -2,11 +2,8 @@ package com.example.videoplayer
 
 import android.net.Uri
 import android.os.Bundle
-import android.widget.MediaController
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.videoplayer.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +34,7 @@ class MainActivity : AppCompatActivity() {
                 playVideo(videoIndex)
             } else {
                 videoIndex = videoList.size - 1
+                playVideo(videoIndex)
             }
         }
 
